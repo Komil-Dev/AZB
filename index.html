@@ -269,376 +269,266 @@
 		}
 	</style>
 
-
-	<section class="h-[90vh] flex items-center justify-center px-6 relative overflow-hidden">
-		<!-- Background Images for each slide -->
-		<div class="absolute inset-0">
-			<!-- Slide 1 Background -->
-			<div class="slide-bg absolute inset-0 transition-opacity duration-1000 opacity-100" data-slide="0"
-				style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1553909489-cd47e0ef937f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2825&q=80') center/cover;">
-			</div>
-			<!-- Slide 2 Background -->
-			<div class="slide-bg absolute inset-0 transition-opacity duration-1000 opacity-0" data-slide="1"
-				style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80') center/cover;">
-			</div>
-			<!-- Slide 3 Background -->
-			<div class="slide-bg absolute inset-0 transition-opacity duration-1000 opacity-0" data-slide="2"
-				style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80') center/cover;">
-			</div>
-			<!-- Slide 4 Background -->
-			<div class="slide-bg absolute inset-0 transition-opacity duration-1000 opacity-0" data-slide="3"
-				style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80') center/cover;">
-			</div>
-			<!-- Slide 5 Background -->
-			<div class="slide-bg absolute inset-0 transition-opacity duration-1000 opacity-0" data-slide="4"
-				style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80') center/cover;">
-			</div>
-		</div>
-
-		<div class="container mx-auto max-w-7xl relative z-10">
-			<div class="grid lg:grid-cols-12 gap-12 items-center h-full">
-				<!-- Left Content - Full Text Area -->
-				<div class="lg:col-span-6 space-y-8" id="leftContent">
-					<!-- Slide 1 Content -->
-					<div class="slide-content slide-active" data-slide="0">
-						<div class="space-y-6">
-							<div
-								class="inline-flex items-center px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full border border-orange-200">
-								<span class="w-2 h-2 bg-green-500 rounded-full animate-pulse mr-3"></span>
-								<span class="text-sm font-medium text-gray-800">Premium Quality Guaranteed</span>
-							</div>
-
-							<h1 class="text-5xl lg:text-7xl font-bold text-white leading-tight drop-shadow-lg">
-								Nourish your
-								<span
-									class="bg-gradient-to-r from-orange-400 to-amber-500 bg-clip-text text-transparent">
-									healthy
-								</span>
-								lifestyle naturally
-							</h1>
-
-							<p class="text-xl text-gray-100 leading-relaxed max-w-2xl drop-shadow-md">
-								Discover the finest selection of premium dried fruits with our innovative,
-								sustainable sourcing platform. Designed for health-conscious families and businesses.
-							</p>
-						</div>
+	<div class="relative w-screen h-[100vh]  overflow-hidden">
+		<!-- Slide 1 - Premium Mix -->
+		<div class="slide-image absolute inset-0 transition-all duration-1000 ease-in-out opacity-100" data-slide="0">
+			<div
+				class="bg-gradient-to-br from-orange-400 via-orange-300 to-amber-400 h-full flex items-center justify-center">
+				<div class="text-center space-y-8 p-8 pt-32">
+					<div
+						class="w-40 h-40 bg-gradient-to-br from-orange-500 to-amber-600 rounded-3xl mx-auto flex items-center justify-center shadow-2xl float-animation">
+						<span class="text-8xl">🥜</span>
 					</div>
-
-					<!-- Slide 2 Content -->
-					<div class="slide-content slide-enter" data-slide="1">
-						<div class="space-y-6">
-							<div
-								class="inline-flex items-center px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full border border-purple-200">
-								<span class="w-2 h-2 bg-purple-500 rounded-full animate-pulse mr-3"></span>
-								<span class="text-sm font-medium text-gray-800">Organic & Natural</span>
-							</div>
-
-							<h1 class="text-5xl lg:text-7xl font-bold text-white leading-tight drop-shadow-lg">
-								Pure
-								<span
-									class="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
-									organic
-								</span>
-								goodness in every bite
-							</h1>
-
-							<p class="text-xl text-gray-100 leading-relaxed max-w-2xl drop-shadow-md">
-								Our certified organic dried fruits are carefully selected from the finest orchards
-								worldwide.
-								No artificial preservatives, just pure natural sweetness and nutrition.
-							</p>
-						</div>
+					<div>
+						<h3 class="text-5xl font-bold text-white mb-4 drop-shadow-lg">Premium Mix</h3>
+						<p class="text-white text-xl drop-shadow">Carefully selected nuts & dried fruits</p>
 					</div>
-
-					<!-- Slide 3 Content -->
-					<div class="slide-content slide-enter" data-slide="2">
-						<div class="space-y-6">
-							<div
-								class="inline-flex items-center px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full border border-emerald-200">
-								<span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse mr-3"></span>
-								<span class="text-sm font-medium text-gray-800">Sustainable Sourcing</span>
-							</div>
-
-							<h1 class="text-5xl lg:text-7xl font-bold text-white leading-tight drop-shadow-lg">
-								Supporting
-								<span
-									class="bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent">
-									farmers
-								</span>
-								worldwide
-							</h1>
-
-							<p class="text-xl text-gray-100 leading-relaxed max-w-2xl drop-shadow-md">
-								Every purchase supports small-scale farmers and sustainable agriculture.
-								We believe in fair trade, environmental responsibility, and community growth.
-							</p>
-						</div>
-					</div>
-
-					<!-- Slide 4 Content -->
-					<div class="slide-content slide-enter" data-slide="3">
-						<div class="space-y-6">
-							<div
-								class="inline-flex items-center px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full border border-blue-200">
-								<span class="w-2 h-2 bg-blue-500 rounded-full animate-pulse mr-3"></span>
-								<span class="text-sm font-medium text-gray-800">Nutritionist Approved</span>
-							</div>
-
-							<h1 class="text-5xl lg:text-7xl font-bold text-white leading-tight drop-shadow-lg">
-								Boost your
-								<span
-									class="bg-gradient-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent">
-									energy
-								</span>
-								naturally
-							</h1>
-
-							<p class="text-xl text-gray-100 leading-relaxed max-w-2xl drop-shadow-md">
-								Packed with essential vitamins, minerals, and antioxidants.
-								Perfect for athletes, busy professionals, and anyone seeking natural energy.
-							</p>
-						</div>
-					</div>
-
-					<!-- Slide 5 Content -->
-					<div class="slide-content slide-enter" data-slide="4">
-						<div class="space-y-6">
-							<div
-								class="inline-flex items-center px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full border border-rose-200">
-								<span class="w-2 h-2 bg-rose-500 rounded-full animate-pulse mr-3"></span>
-								<span class="text-sm font-medium text-gray-800">Family Loved</span>
-							</div>
-
-							<h1 class="text-5xl lg:text-7xl font-bold text-white leading-tight drop-shadow-lg">
-								Bringing
-								<span class="bg-gradient-to-r from-rose-400 to-pink-500 bg-clip-text text-transparent">
-									families
-								</span>
-								together
-							</h1>
-
-							<p class="text-xl text-gray-100 leading-relaxed max-w-2xl drop-shadow-md">
-								Create memorable moments with delicious, healthy snacks that everyone loves.
-								From kids' lunchboxes to family movie nights, we've got you covered.
-							</p>
-						</div>
-					</div>
-
-					<!-- Common Buttons and Stats -->
-					<div class="flex flex-col sm:flex-row gap-4">
-						<button
-							class="group px-8 py-4 bg-gradient-to-r from-primary to-accent text-white rounded-full font-semibold hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center justify-center">
-							<span>Explore Products</span>
-							<svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none"
-								stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-									d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-							</svg>
-						</button>
-
-						<button
-							class="px-8 py-4 bg-white/80 backdrop-blur-sm text-gray-800 rounded-full font-semibold border border-gray-200 hover:bg-white hover:shadow-lg transition-all duration-300">
-							Learn More
-						</button>
-					</div>
-
-					<!-- Stats -->
-					<div class="flex items-center space-x-8 pt-8">
-						<div class="text-center">
-							<div class="flex items-center justify-center space-x-1">
-								<span class="text-3xl font-bold text-white drop-shadow-md">500+</span>
-								<span class="text-orange-400">✓</span>
-							</div>
-							<p class="text-sm text-gray-200 mt-1">Premium Products</p>
-						</div>
-						<div class="text-center">
-							<div class="flex items-center justify-center space-x-1">
-								<span class="text-3xl font-bold text-white drop-shadow-md">10k+</span>
-								<span class="text-orange-400">♥</span>
-							</div>
-							<p class="text-sm text-gray-200 mt-1">Happy Customers</p>
-						</div>
-						<div class="text-center">
-							<div class="flex items-center justify-center space-x-1">
-								<span class="text-3xl font-bold text-white drop-shadow-md">15+</span>
-								<span class="text-orange-400">🌍</span>
-							</div>
-							<p class="text-sm text-gray-200 mt-1">Countries Served</p>
-						</div>
-					</div>
-				</div>
-
-				<!-- Right Content - Navigation Controls -->
-				<div class="lg:col-span-6 flex flex-col items-end justify-center space-y-8">
-					<!-- Navigation Dots -->
-					<div class="flex flex-col space-y-4">
-						<button class="dot w-4 h-4 bg-white rounded-full transition-all duration-300 shadow-lg"
-							data-slide="0"></button>
-						<button
-							class="dot w-4 h-4 bg-white/50 rounded-full hover:bg-white/70 transition-all duration-300 shadow-lg"
-							data-slide="1"></button>
-						<button
-							class="dot w-4 h-4 bg-white/50 rounded-full hover:bg-white/70 transition-all duration-300 shadow-lg"
-							data-slide="2"></button>
-						<button
-							class="dot w-4 h-4 bg-white/50 rounded-full hover:bg-white/70 transition-all duration-300 shadow-lg"
-							data-slide="3"></button>
-						<button
-							class="dot w-4 h-4 bg-white/50 rounded-full hover:bg-white/70 transition-all duration-300 shadow-lg"
-							data-slide="4"></button>
-					</div>
-
-					<!-- Progress Bar -->
-					<div class="w-32 bg-white/30 rounded-full h-2">
-						<div class="progress-bar bg-white h-2 rounded-full shadow-lg" style="width: 0%"></div>
+					<div class="bg-white/20 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-white/30">
+						<div class="text-5xl font-bold text-white mb-3 drop-shadow">$24.99</div>
+						<div class="text-lg text-white/90 drop-shadow">Per 500g package</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<!-- Navigation Arrows -->
-		<button
-			class="absolute left-8 top-1/2 transform -translate-y-1/2 w-14 h-14 bg-white/20 backdrop-blur-sm rounded-full shadow-lg hover:bg-white/30 transition-all duration-300 flex items-center justify-center group"
-			id="prevBtn">
-			<svg class="w-7 h-7 text-white group-hover:text-orange-400 transition-colors" fill="none"
-				stroke="currentColor" viewBox="0 0 24 24">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-			</svg>
-		</button>
-		<button
-			class="absolute right-8 top-1/2 transform -translate-y-1/2 w-14 h-14 bg-white/20 backdrop-blur-sm rounded-full shadow-lg hover:bg-white/30 transition-all duration-300 flex items-center justify-center group"
-			id="nextBtn">
-			<svg class="w-7 h-7 text-white group-hover:text-orange-400 transition-colors" fill="none"
-				stroke="currentColor" viewBox="0 0 24 24">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-			</svg>
-		</button>
+		<!-- Slide 2 - Organic Berries -->
+		<div class="slide-image absolute inset-0 transition-all duration-1000 ease-in-out opacity-0" data-slide="1">
+			<div
+				class="bg-gradient-to-br from-purple-400 via-purple-300 to-pink-400 h-full flex items-center justify-center">
+				<div class="text-center space-y-8 p-8 pt-32">
+					<div
+						class="w-40 h-40 bg-gradient-to-br from-purple-500 to-pink-600 rounded-3xl mx-auto flex items-center justify-center shadow-2xl float-animation">
+						<span class="text-8xl">🫐</span>
+					</div>
+					<div>
+						<h3 class="text-5xl font-bold text-white mb-4 drop-shadow-lg">Organic Berries</h3>
+						<p class="text-white text-xl drop-shadow">Antioxidant-rich superfood blend</p>
+					</div>
+					<div class="bg-white/20 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-white/30">
+						<div class="text-5xl font-bold text-white mb-3 drop-shadow">$32.99</div>
+						<div class="text-lg text-white/90 drop-shadow">Per 400g package</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Slide 3 - Tropical Paradise -->
+		<div class="slide-image absolute inset-0 transition-all duration-1000 ease-in-out opacity-0" data-slide="2">
+			<div
+				class="bg-gradient-to-br from-emerald-400 via-emerald-300 to-teal-400 h-full flex items-center justify-center">
+				<div class="text-center space-y-8 p-8 pt-32">
+					<div
+						class="w-40 h-40 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-3xl mx-auto flex items-center justify-center shadow-2xl float-animation">
+						<span class="text-8xl">🥭</span>
+					</div>
+					<div>
+						<h3 class="text-5xl font-bold text-white mb-4 drop-shadow-lg">Tropical Paradise</h3>
+						<p class="text-white text-xl drop-shadow">Exotic fruits from paradise islands</p>
+					</div>
+					<div class="bg-white/20 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-white/30">
+						<div class="text-5xl font-bold text-white mb-3 drop-shadow">$28.99</div>
+						<div class="text-lg text-white/90 drop-shadow">Per 450g package</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Slide 4 - Energy Boost -->
+		<div class="slide-image absolute inset-0 transition-all duration-1000 ease-in-out opacity-0" data-slide="3">
+			<div
+				class="bg-gradient-to-br from-blue-400 via-blue-300 to-indigo-400 h-full flex items-center justify-center">
+				<div class="text-center space-y-8 p-8 pt-32">
+					<div
+						class="w-40 h-40 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-3xl mx-auto flex items-center justify-center shadow-2xl float-animation">
+						<span class="text-8xl">⚡</span>
+					</div>
+					<div>
+						<h3 class="text-5xl font-bold text-white mb-4 drop-shadow-lg">Energy Boost</h3>
+						<p class="text-white text-xl drop-shadow">High-protein nuts & seeds mix</p>
+					</div>
+					<div class="bg-white/20 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-white/30">
+						<div class="text-5xl font-bold text-white mb-3 drop-shadow">$26.99</div>
+						<div class="text-lg text-white/90 drop-shadow">Per 500g package</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Slide 5 - Family Pack -->
+		<div class="slide-image absolute inset-0 transition-all duration-1000 ease-in-out opacity-0" data-slide="4">
+			<div
+				class="bg-gradient-to-br from-rose-400 via-rose-300 to-pink-400 h-full flex items-center justify-center">
+				<div class="text-center space-y-8 p-8 pt-32">
+					<div
+						class="w-40 h-40 bg-gradient-to-br from-rose-500 to-pink-600 rounded-3xl mx-auto flex items-center justify-center shadow-2xl float-animation">
+						<span class="text-8xl">👨‍👩‍👧‍👦</span>
+					</div>
+					<div>
+						<h3 class="text-5xl font-bold text-white mb-4 drop-shadow-lg">Family Pack</h3>
+						<p class="text-white text-xl drop-shadow">Perfect for sharing moments</p>
+					</div>
+					<div class="bg-white/20 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-white/30">
+						<div class="text-5xl font-bold text-white mb-3 drop-shadow">$45.99</div>
+						<div class="text-lg text-white/90 drop-shadow">Per 1kg family pack</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Navigation Dots -->
+		<div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex justify-center space-x-4 z-40">
+			<button class="dot w-4 h-4 bg-white rounded-full transition-all duration-300 shadow-lg"
+				data-slide="0"></button>
+			<button class="dot w-4 h-4 bg-white/50 rounded-full hover:bg-white/70 transition-all duration-300 shadow-lg"
+				data-slide="1"></button>
+			<button class="dot w-4 h-4 bg-white/50 rounded-full hover:bg-white/70 transition-all duration-300 shadow-lg"
+				data-slide="2"></button>
+			<button class="dot w-4 h-4 bg-white/50 rounded-full hover:bg-white/70 transition-all duration-300 shadow-lg"
+				data-slide="3"></button>
+			<button class="dot w-4 h-4 bg-white/50 rounded-full hover:bg-white/70 transition-all duration-300 shadow-lg"
+				data-slide="4"></button>
 		</div>
 
 		<!-- Progress Bar -->
-		<div class="w-full bg-gray-200 rounded-full h-1 mt-4">
-			<div class="progress-bar bg-primary h-1 rounded-full" style="width: 0%"></div>
+		<div class="absolute bottom-20 left-8 right-8 bg-white/20 rounded-full h-2 z-40">
+			<div class="progress-bar bg-white h-2 rounded-full transition-all duration-300" style="width: 20%"></div>
 		</div>
 
 		<!-- Navigation Arrows -->
 		<button
-			class="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group"
+			class="absolute left-8 top-1/2 transform -translate-y-1/2 w-16 h-16 bg-white/20 backdrop-blur-md rounded-full shadow-2xl hover:shadow-3xl hover:bg-white/30 transition-all duration-300 flex items-center justify-center group z-40 border border-white/30"
 			id="prevBtn">
-			<svg class="w-6 h-6 text-gray-700 group-hover:text-primary transition-colors" fill="none"
-				stroke="currentColor" viewBox="0 0 24 24">
+			<svg class="w-8 h-8 text-white group-hover:scale-110 transition-transform" fill="none" stroke="currentColor"
+				viewBox="0 0 24 24">
 				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
 			</svg>
 		</button>
 		<button
-			class="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group"
+			class="absolute right-8 top-1/2 transform -translate-y-1/2 w-16 h-16 bg-white/20 backdrop-blur-md rounded-full shadow-2xl hover:shadow-3xl hover:bg-white/30 transition-all duration-300 flex items-center justify-center group z-40 border border-white/30"
 			id="nextBtn">
-			<svg class="w-6 h-6 text-gray-700 group-hover:text-primary transition-colors" fill="none"
-				stroke="currentColor" viewBox="0 0 24 24">
+			<svg class="w-8 h-8 text-white group-hover:scale-110 transition-transform" fill="none" stroke="currentColor"
+				viewBox="0 0 24 24">
 				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
 			</svg>
 		</button>
-		</div>
-		</div>
-		</div>
-	</section>
+	</div>
 
 	<script>
 		let currentSlide = 0;
 		const totalSlides = 5;
-		let autoSlideInterval;
-		let isTransitioning = false;
+		const slideInterval = 4000; // 4 seconds
+		let autoSlideTimer;
 
-		// Get all elements
-		const slideContents = document.querySelectorAll('.slide-content');
-		const slideImages = document.querySelectorAll('.slide-image');
-		const dots = document.querySelectorAll('.dot');
-		const progressBar = document.querySelector('.progress-bar');
-		const prevBtn = document.getElementById('prevBtn');
-		const nextBtn = document.getElementById('nextBtn');
-
-		// Show specific slide
-		function showSlide(index) {
-			if (isTransitioning) return;
-			isTransitioning = true;
-
-			// Update content
-			slideContents[currentSlide].classList.remove('slide-active');
-			slideContents[currentSlide].classList.add('slide-enter');
-
-			slideContents[index].classList.remove('slide-enter');
-			slideContents[index].classList.add('slide-active');
-
-			// Update images
-			slideImages[currentSlide].style.opacity = '0';
-			slideImages[index].style.opacity = '1';
-
-			// Update dots
-			dots[currentSlide].classList.remove('bg-primary');
-			dots[currentSlide].classList.add('bg-gray-300');
-			dots[index].classList.remove('bg-gray-300');
-			dots[index].classList.add('bg-primary');
-
-			currentSlide = index;
-			resetProgressBar();
-
-			setTimeout(() => {
-				isTransitioning = false;
-			}, 800);
+		function updateProgressBar() {
+			const progress = ((currentSlide + 1) / totalSlides) * 100;
+			document.querySelector('.progress-bar').style.width = progress + '%';
 		}
 
-		// Auto slide function
+		function updateDots() {
+			document.querySelectorAll('.dot').forEach((dot, index) => {
+				if (index === currentSlide) {
+					dot.classList.remove('bg-white/50');
+					dot.classList.add('bg-white');
+				} else {
+					dot.classList.remove('bg-white');
+					dot.classList.add('bg-white/50');
+				}
+			});
+		}
+
+		function showSlide(slideIndex, direction = 'next') {
+			const slides = document.querySelectorAll('.slide-image');
+			const currentSlideEl = slides[currentSlide];
+			const nextSlideEl = slides[slideIndex];
+
+			// Hide current slide
+			currentSlideEl.style.opacity = '0';
+			if (direction === 'next') {
+				currentSlideEl.classList.add('slide-out-left');
+			} else {
+				currentSlideEl.classList.add('slide-out-right');
+			}
+
+			// Show next slide
+			setTimeout(() => {
+				currentSlideEl.classList.remove('slide-out-left', 'slide-out-right');
+
+				if (direction === 'next') {
+					nextSlideEl.classList.add('slide-in-right');
+				} else {
+					nextSlideEl.classList.add('slide-in-left');
+				}
+
+				nextSlideEl.style.opacity = '1';
+
+				setTimeout(() => {
+					nextSlideEl.classList.remove('slide-in-left', 'slide-in-right');
+				}, 50);
+			}, 100);
+
+			currentSlide = slideIndex;
+			updateProgressBar();
+			updateDots();
+		}
+
 		function nextSlide() {
-			const next = (currentSlide + 1) % totalSlides;
-			showSlide(next);
+			const nextIndex = (currentSlide + 1) % totalSlides;
+			showSlide(nextIndex, 'next');
 		}
 
 		function prevSlide() {
-			const prev = (currentSlide - 1 + totalSlides) % totalSlides;
-			showSlide(prev);
+			const prevIndex = (currentSlide - 1 + totalSlides) % totalSlides;
+			showSlide(prevIndex, 'prev');
 		}
 
-		// Progress bar animation
-		function resetProgressBar() {
-			progressBar.style.width = '0%';
-			setTimeout(() => {
-				progressBar.style.width = '100%';
-			}, 100);
-		}
-
-		// Start auto slide
 		function startAutoSlide() {
-			resetProgressBar();
-			autoSlideInterval = setInterval(nextSlide, 5000);
+			autoSlideTimer = setInterval(nextSlide, slideInterval);
 		}
 
-		// Stop auto slide
 		function stopAutoSlide() {
-			clearInterval(autoSlideInterval);
-			progressBar.style.width = '0%';
+			clearInterval(autoSlideTimer);
+		}
+
+		function restartAutoSlide() {
+			stopAutoSlide();
+			startAutoSlide();
 		}
 
 		// Event listeners
-		prevBtn.addEventListener('click', () => {
-			stopAutoSlide();
-			prevSlide();
-			startAutoSlide();
+		document.getElementById('nextBtn').addEventListener('click', () => {
+			nextSlide();
+			restartAutoSlide();
 		});
 
-		nextBtn.addEventListener('click', () => {
-			stopAutoSlide();
-			nextSlide();
-			startAutoSlide();
+		document.getElementById('prevBtn').addEventListener('click', () => {
+			prevSlide();
+			restartAutoSlide();
 		});
 
 		// Dot navigation
-		dots.forEach((dot, index) => {
+		document.querySelectorAll('.dot').forEach((dot, index) => {
 			dot.addEventListener('click', () => {
 				if (index !== currentSlide) {
-					stopAutoSlide();
-					showSlide(index);
-					startAutoSlide();
+					const direction = index > currentSlide ? 'next' : 'prev';
+					showSlide(index, direction);
+					restartAutoSlide();
 				}
 			});
+		});
+
+		// Pause on hover
+		document.querySelector('.relative').addEventListener('mouseenter', stopAutoSlide);
+		document.querySelector('.relative').addEventListener('mouseleave', startAutoSlide);
+
+		// Keyboard navigation
+		document.addEventListener('keydown', (e) => {
+			if (e.key === 'ArrowLeft') {
+				prevSlide();
+				restartAutoSlide();
+			} else if (e.key === 'ArrowRight') {
+				nextSlide();
+				restartAutoSlide();
+			}
 		});
 
 		// Touch/swipe support
@@ -659,24 +549,21 @@
 			const diff = touchStartX - touchEndX;
 
 			if (Math.abs(diff) > swipeThreshold) {
-				stopAutoSlide();
 				if (diff > 0) {
 					nextSlide();
 				} else {
 					prevSlide();
 				}
-				startAutoSlide();
+				restartAutoSlide();
 			}
 		}
 
-		// Pause auto slide on hover
-		const carousel = document.querySelector('section');
-		carousel.addEventListener('mouseenter', stopAutoSlide);
-		carousel.addEventListener('mouseleave', startAutoSlide);
-
 		// Initialize
+		updateProgressBar();
+		updateDots();
 		startAutoSlide();
 	</script>
+
 
 	<style>
 		.hide-scrollbar {
