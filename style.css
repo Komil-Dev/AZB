@@ -236,6 +236,246 @@ body {
   }
 }
 
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(229, 231, 235, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(16, 185, 129, 0.1), transparent);
+  transition: left 0.6s;
+}
+
+.product-image {
+  background: linear-gradient(135deg, #f0fdf4, #ecfccb);
+  transition: all 0.4s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.product-card:hover .product-image {
+  background: linear-gradient(135deg, #dcfce7, #d9f99d);
+}
+
+.emoji-container {
+  transition: all 0.4s ease;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.1));
+}
+
+.product-card:hover .emoji-container {
+  transform: scale(1.1) rotate(5deg);
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.2));
+}
+
+.add-to-basket {
+  background: linear-gradient(135deg, #065f46, #047857, #059669);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  transform: translateY(0);
+}
+
+.add-to-basket::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+.add-to-basket:hover::after {
+  left: 100%;
+}
+
+.add-to-basket:hover {
+  background: linear-gradient(135deg, #047857, #059669, #10b981);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(6, 95, 70, 0.5);
+}
+
+.badge {
+  backdrop-filter: blur(10px);
+  background: rgba(16, 185, 129, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.badge.vip {
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+}
+
+.badge.premium {
+  background: linear-gradient(135deg, #dc2626, #ef4444);
+}
+
+.basket-sidebar {
+  transform: translateX(100%);
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.basket-sidebar.open {
+  transform: translateX(0);
+}
+
+.backdrop {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(0px);
+}
+
+.backdrop.show {
+  opacity: 1;
+  visibility: visible;
+  backdrop-filter: blur(4px);
+}
+
+.basket-item {
+  animation: slideInRight 0.4s ease-out;
+  background: linear-gradient(135deg, #f8fafc, #ffffff);
+  border: 1px solid rgba(229, 231, 235, 0.5);
+  transition: all 0.3s ease;
+}
+
+.basket-item:hover {
+  transform: translateX(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse-animation {
+  animation: pulse 0.4s ease-in-out;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.bounce-animation {
+  animation: bounce 0.6s ease-in-out;
+}
+
+.telegram-btn {
+  background: linear-gradient(135deg, #0088cc, #0066aa, #229ed9);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.telegram-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+.telegram-btn:hover::before {
+  left: 100%;
+}
+
+.telegram-btn:hover {
+  background: linear-gradient(135deg, #0066aa, #004488, #0088cc);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0, 136, 204, 0.5);
+}
+
+.quantity-btn {
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+}
+
+.quantity-btn:hover {
+  background: linear-gradient(135deg, #e5e7eb, #d1d5db);
+  transform: scale(1.1);
+}
+
+.quantity-btn.plus {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+}
+
+.quantity-btn.plus:hover {
+  background: linear-gradient(135deg, #059669, #047857);
+}
+
+.header-gradient {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(248, 250, 252, 0.9));
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(229, 231, 235, 0.3);
+}
+
+.floating-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
 .map-iframe {
   inset: 0;
   width: 90%;
