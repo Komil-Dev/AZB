@@ -270,40 +270,54 @@
 	</style>
 
 
-	<section class="min-h-screen flex items-center justify-center pt-20 px-6 relative overflow-hidden">
-		<!-- Background Elements -->
-		<div class="absolute inset-0 overflow-hidden">
-			<div
-				class="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-orange-200 to-amber-200 rounded-full blur-3xl opacity-30">
+	<section class="h-[90vh] flex items-center justify-center px-6 relative overflow-hidden">
+		<!-- Background Images for each slide -->
+		<div class="absolute inset-0">
+			<!-- Slide 1 Background -->
+			<div class="slide-bg absolute inset-0 transition-opacity duration-1000 opacity-100" data-slide="0"
+				style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1553909489-cd47e0ef937f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2825&q=80') center/cover;">
 			</div>
-			<div
-				class="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-yellow-200 to-orange-200 rounded-full blur-3xl opacity-30">
+			<!-- Slide 2 Background -->
+			<div class="slide-bg absolute inset-0 transition-opacity duration-1000 opacity-0" data-slide="1"
+				style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80') center/cover;">
+			</div>
+			<!-- Slide 3 Background -->
+			<div class="slide-bg absolute inset-0 transition-opacity duration-1000 opacity-0" data-slide="2"
+				style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80') center/cover;">
+			</div>
+			<!-- Slide 4 Background -->
+			<div class="slide-bg absolute inset-0 transition-opacity duration-1000 opacity-0" data-slide="3"
+				style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80') center/cover;">
+			</div>
+			<!-- Slide 5 Background -->
+			<div class="slide-bg absolute inset-0 transition-opacity duration-1000 opacity-0" data-slide="4"
+				style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80') center/cover;">
 			</div>
 		</div>
 
 		<div class="container mx-auto max-w-7xl relative z-10">
-			<div class="grid lg:grid-cols-2 gap-12 items-center min-h-[600px]">
-				<!-- Left Content -->
-				<div class="space-y-8" id="leftContent">
+			<div class="grid lg:grid-cols-12 gap-12 items-center h-full">
+				<!-- Left Content - Full Text Area -->
+				<div class="lg:col-span-6 space-y-8" id="leftContent">
 					<!-- Slide 1 Content -->
 					<div class="slide-content slide-active" data-slide="0">
 						<div class="space-y-6">
 							<div
-								class="inline-flex items-center px-4 py-2 bg-white/70 backdrop-blur-sm rounded-full border border-orange-200">
+								class="inline-flex items-center px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full border border-orange-200">
 								<span class="w-2 h-2 bg-green-500 rounded-full animate-pulse mr-3"></span>
-								<span class="text-sm font-medium text-gray-700">Premium Quality Guaranteed</span>
+								<span class="text-sm font-medium text-gray-800">Premium Quality Guaranteed</span>
 							</div>
 
-							<h1 class="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
+							<h1 class="text-5xl lg:text-7xl font-bold text-white leading-tight drop-shadow-lg">
 								Nourish your
 								<span
-									class="bg-gradient-to-r from-orange-500 to-amber-600 bg-clip-text text-transparent">
+									class="bg-gradient-to-r from-orange-400 to-amber-500 bg-clip-text text-transparent">
 									healthy
 								</span>
 								lifestyle naturally
 							</h1>
 
-							<p class="text-xl text-gray-600 leading-relaxed max-w-2xl">
+							<p class="text-xl text-gray-100 leading-relaxed max-w-2xl drop-shadow-md">
 								Discover the finest selection of premium dried fruits with our innovative,
 								sustainable sourcing platform. Designed for health-conscious families and businesses.
 							</p>
@@ -314,21 +328,21 @@
 					<div class="slide-content slide-enter" data-slide="1">
 						<div class="space-y-6">
 							<div
-								class="inline-flex items-center px-4 py-2 bg-white/70 backdrop-blur-sm rounded-full border border-purple-200">
+								class="inline-flex items-center px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full border border-purple-200">
 								<span class="w-2 h-2 bg-purple-500 rounded-full animate-pulse mr-3"></span>
-								<span class="text-sm font-medium text-gray-700">Organic & Natural</span>
+								<span class="text-sm font-medium text-gray-800">Organic & Natural</span>
 							</div>
 
-							<h1 class="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
+							<h1 class="text-5xl lg:text-7xl font-bold text-white leading-tight drop-shadow-lg">
 								Pure
 								<span
-									class="bg-gradient-to-r from-purple-500 to-pink-600 bg-clip-text text-transparent">
+									class="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
 									organic
 								</span>
 								goodness in every bite
 							</h1>
 
-							<p class="text-xl text-gray-600 leading-relaxed max-w-2xl">
+							<p class="text-xl text-gray-100 leading-relaxed max-w-2xl drop-shadow-md">
 								Our certified organic dried fruits are carefully selected from the finest orchards
 								worldwide.
 								No artificial preservatives, just pure natural sweetness and nutrition.
@@ -340,21 +354,21 @@
 					<div class="slide-content slide-enter" data-slide="2">
 						<div class="space-y-6">
 							<div
-								class="inline-flex items-center px-4 py-2 bg-white/70 backdrop-blur-sm rounded-full border border-emerald-200">
+								class="inline-flex items-center px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full border border-emerald-200">
 								<span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse mr-3"></span>
-								<span class="text-sm font-medium text-gray-700">Sustainable Sourcing</span>
+								<span class="text-sm font-medium text-gray-800">Sustainable Sourcing</span>
 							</div>
 
-							<h1 class="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
+							<h1 class="text-5xl lg:text-7xl font-bold text-white leading-tight drop-shadow-lg">
 								Supporting
 								<span
-									class="bg-gradient-to-r from-emerald-500 to-teal-600 bg-clip-text text-transparent">
+									class="bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent">
 									farmers
 								</span>
 								worldwide
 							</h1>
 
-							<p class="text-xl text-gray-600 leading-relaxed max-w-2xl">
+							<p class="text-xl text-gray-100 leading-relaxed max-w-2xl drop-shadow-md">
 								Every purchase supports small-scale farmers and sustainable agriculture.
 								We believe in fair trade, environmental responsibility, and community growth.
 							</p>
@@ -365,21 +379,21 @@
 					<div class="slide-content slide-enter" data-slide="3">
 						<div class="space-y-6">
 							<div
-								class="inline-flex items-center px-4 py-2 bg-white/70 backdrop-blur-sm rounded-full border border-blue-200">
+								class="inline-flex items-center px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full border border-blue-200">
 								<span class="w-2 h-2 bg-blue-500 rounded-full animate-pulse mr-3"></span>
-								<span class="text-sm font-medium text-gray-700">Nutritionist Approved</span>
+								<span class="text-sm font-medium text-gray-800">Nutritionist Approved</span>
 							</div>
 
-							<h1 class="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
+							<h1 class="text-5xl lg:text-7xl font-bold text-white leading-tight drop-shadow-lg">
 								Boost your
 								<span
-									class="bg-gradient-to-r from-blue-500 to-indigo-600 bg-clip-text text-transparent">
+									class="bg-gradient-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent">
 									energy
 								</span>
 								naturally
 							</h1>
 
-							<p class="text-xl text-gray-600 leading-relaxed max-w-2xl">
+							<p class="text-xl text-gray-100 leading-relaxed max-w-2xl drop-shadow-md">
 								Packed with essential vitamins, minerals, and antioxidants.
 								Perfect for athletes, busy professionals, and anyone seeking natural energy.
 							</p>
@@ -390,20 +404,20 @@
 					<div class="slide-content slide-enter" data-slide="4">
 						<div class="space-y-6">
 							<div
-								class="inline-flex items-center px-4 py-2 bg-white/70 backdrop-blur-sm rounded-full border border-rose-200">
+								class="inline-flex items-center px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full border border-rose-200">
 								<span class="w-2 h-2 bg-rose-500 rounded-full animate-pulse mr-3"></span>
-								<span class="text-sm font-medium text-gray-700">Family Loved</span>
+								<span class="text-sm font-medium text-gray-800">Family Loved</span>
 							</div>
 
-							<h1 class="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
+							<h1 class="text-5xl lg:text-7xl font-bold text-white leading-tight drop-shadow-lg">
 								Bringing
-								<span class="bg-gradient-to-r from-rose-500 to-pink-600 bg-clip-text text-transparent">
+								<span class="bg-gradient-to-r from-rose-400 to-pink-500 bg-clip-text text-transparent">
 									families
 								</span>
 								together
 							</h1>
 
-							<p class="text-xl text-gray-600 leading-relaxed max-w-2xl">
+							<p class="text-xl text-gray-100 leading-relaxed max-w-2xl drop-shadow-md">
 								Create memorable moments with delicious, healthy snacks that everyone loves.
 								From kids' lunchboxes to family movie nights, we've got you covered.
 							</p>
@@ -432,187 +446,99 @@
 					<div class="flex items-center space-x-8 pt-8">
 						<div class="text-center">
 							<div class="flex items-center justify-center space-x-1">
-								<span class="text-3xl font-bold text-gray-900">500+</span>
-								<span class="text-primary">✓</span>
+								<span class="text-3xl font-bold text-white drop-shadow-md">500+</span>
+								<span class="text-orange-400">✓</span>
 							</div>
-							<p class="text-sm text-gray-600 mt-1">Premium Products</p>
+							<p class="text-sm text-gray-200 mt-1">Premium Products</p>
 						</div>
 						<div class="text-center">
 							<div class="flex items-center justify-center space-x-1">
-								<span class="text-3xl font-bold text-gray-900">10k+</span>
-								<span class="text-primary">♥</span>
+								<span class="text-3xl font-bold text-white drop-shadow-md">10k+</span>
+								<span class="text-orange-400">♥</span>
 							</div>
-							<p class="text-sm text-gray-600 mt-1">Happy Customers</p>
+							<p class="text-sm text-gray-200 mt-1">Happy Customers</p>
 						</div>
 						<div class="text-center">
 							<div class="flex items-center justify-center space-x-1">
-								<span class="text-3xl font-bold text-gray-900">15+</span>
-								<span class="text-primary">🌍</span>
+								<span class="text-3xl font-bold text-white drop-shadow-md">15+</span>
+								<span class="text-orange-400">🌍</span>
 							</div>
-							<p class="text-sm text-gray-600 mt-1">Countries Served</p>
+							<p class="text-sm text-gray-200 mt-1">Countries Served</p>
 						</div>
 					</div>
 				</div>
 
-				<!-- Right Content - Image Carousel -->
-				<div class="relative">
-					<!-- Main Image Container -->
-					<div class="relative w-full h-[600px] overflow-hidden rounded-3xl">
-						<!-- Slide 1 - Premium Mix -->
-						<div class="slide-image absolute inset-0 transition-all duration-1000 ease-in-out opacity-100"
-							data-slide="0">
-							<div
-								class="bg-gradient-to-br from-orange-100 to-amber-200 h-full flex items-center justify-center rounded-3xl">
-								<div class="text-center space-y-6 p-8">
-									<div
-										class="w-32 h-32 bg-gradient-to-br from-orange-400 to-amber-500 rounded-3xl mx-auto flex items-center justify-center shadow-2xl float-animation">
-										<span class="text-6xl">🥜</span>
-									</div>
-									<div>
-										<h3 class="text-3xl font-bold text-gray-900 mb-3">Premium Mix</h3>
-										<p class="text-gray-700 text-lg">Carefully selected nuts & dried fruits</p>
-									</div>
-									<div class="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl">
-										<div class="text-4xl font-bold text-orange-600 mb-2">$24.99</div>
-										<div class="text-sm text-orange-700">Per 500g package</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Slide 2 - Organic Berries -->
-						<div class="slide-image absolute inset-0 transition-all duration-1000 ease-in-out opacity-0"
-							data-slide="1">
-							<div
-								class="bg-gradient-to-br from-purple-100 to-pink-200 h-full flex items-center justify-center rounded-3xl">
-								<div class="text-center space-y-6 p-8">
-									<div
-										class="w-32 h-32 bg-gradient-to-br from-purple-400 to-pink-500 rounded-3xl mx-auto flex items-center justify-center shadow-2xl float-animation">
-										<span class="text-6xl">🫐</span>
-									</div>
-									<div>
-										<h3 class="text-3xl font-bold text-gray-900 mb-3">Organic Berries</h3>
-										<p class="text-gray-700 text-lg">Antioxidant-rich superfood blend</p>
-									</div>
-									<div class="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl">
-										<div class="text-4xl font-bold text-purple-600 mb-2">$32.99</div>
-										<div class="text-sm text-purple-700">Per 400g package</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Slide 3 - Tropical Paradise -->
-						<div class="slide-image absolute inset-0 transition-all duration-1000 ease-in-out opacity-0"
-							data-slide="2">
-							<div
-								class="bg-gradient-to-br from-emerald-100 to-teal-200 h-full flex items-center justify-center rounded-3xl">
-								<div class="text-center space-y-6 p-8">
-									<div
-										class="w-32 h-32 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-3xl mx-auto flex items-center justify-center shadow-2xl float-animation">
-										<span class="text-6xl">🥭</span>
-									</div>
-									<div>
-										<h3 class="text-3xl font-bold text-gray-900 mb-3">Tropical Paradise</h3>
-										<p class="text-gray-700 text-lg">Exotic fruits from paradise islands</p>
-									</div>
-									<div class="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl">
-										<div class="text-4xl font-bold text-emerald-600 mb-2">$28.99</div>
-										<div class="text-sm text-emerald-700">Per 450g package</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Slide 4 - Energy Boost -->
-						<div class="slide-image absolute inset-0 transition-all duration-1000 ease-in-out opacity-0"
-							data-slide="3">
-							<div
-								class="bg-gradient-to-br from-blue-100 to-indigo-200 h-full flex items-center justify-center rounded-3xl">
-								<div class="text-center space-y-6 p-8">
-									<div
-										class="w-32 h-32 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-3xl mx-auto flex items-center justify-center shadow-2xl float-animation">
-										<span class="text-6xl">⚡</span>
-									</div>
-									<div>
-										<h3 class="text-3xl font-bold text-gray-900 mb-3">Energy Boost</h3>
-										<p class="text-gray-700 text-lg">High-protein nuts & seeds mix</p>
-									</div>
-									<div class="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl">
-										<div class="text-4xl font-bold text-blue-600 mb-2">$26.99</div>
-										<div class="text-sm text-blue-700">Per 500g package</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Slide 5 - Family Pack -->
-						<div class="slide-image absolute inset-0 transition-all duration-1000 ease-in-out opacity-0"
-							data-slide="4">
-							<div
-								class="bg-gradient-to-br from-rose-100 to-pink-200 h-full flex items-center justify-center rounded-3xl">
-								<div class="text-center space-y-6 p-8">
-									<div
-										class="w-32 h-32 bg-gradient-to-br from-rose-400 to-pink-500 rounded-3xl mx-auto flex items-center justify-center shadow-2xl float-animation">
-										<span class="text-6xl">👨‍👩‍👧‍👦</span>
-									</div>
-									<div>
-										<h3 class="text-3xl font-bold text-gray-900 mb-3">Family Pack</h3>
-										<p class="text-gray-700 text-lg">Perfect for sharing moments</p>
-									</div>
-									<div class="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl">
-										<div class="text-4xl font-bold text-rose-600 mb-2">$45.99</div>
-										<div class="text-sm text-rose-700">Per 1kg family pack</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
+				<!-- Right Content - Navigation Controls -->
+				<div class="lg:col-span-6 flex flex-col items-end justify-center space-y-8">
 					<!-- Navigation Dots -->
-					<div class="flex justify-center space-x-3 mt-8">
-						<button class="dot w-3 h-3 bg-primary rounded-full transition-all duration-300"
+					<div class="flex flex-col space-y-4">
+						<button class="dot w-4 h-4 bg-white rounded-full transition-all duration-300 shadow-lg"
 							data-slide="0"></button>
 						<button
-							class="dot w-3 h-3 bg-gray-300 rounded-full hover:bg-gray-400 transition-all duration-300"
+							class="dot w-4 h-4 bg-white/50 rounded-full hover:bg-white/70 transition-all duration-300 shadow-lg"
 							data-slide="1"></button>
 						<button
-							class="dot w-3 h-3 bg-gray-300 rounded-full hover:bg-gray-400 transition-all duration-300"
+							class="dot w-4 h-4 bg-white/50 rounded-full hover:bg-white/70 transition-all duration-300 shadow-lg"
 							data-slide="2"></button>
 						<button
-							class="dot w-3 h-3 bg-gray-300 rounded-full hover:bg-gray-400 transition-all duration-300"
+							class="dot w-4 h-4 bg-white/50 rounded-full hover:bg-white/70 transition-all duration-300 shadow-lg"
 							data-slide="3"></button>
 						<button
-							class="dot w-3 h-3 bg-gray-300 rounded-full hover:bg-gray-400 transition-all duration-300"
+							class="dot w-4 h-4 bg-white/50 rounded-full hover:bg-white/70 transition-all duration-300 shadow-lg"
 							data-slide="4"></button>
 					</div>
 
 					<!-- Progress Bar -->
-					<div class="w-full bg-gray-200 rounded-full h-1 mt-4">
-						<div class="progress-bar bg-primary h-1 rounded-full" style="width: 0%"></div>
+					<div class="w-32 bg-white/30 rounded-full h-2">
+						<div class="progress-bar bg-white h-2 rounded-full shadow-lg" style="width: 0%"></div>
 					</div>
-
-					<!-- Navigation Arrows -->
-					<button
-						class="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group"
-						id="prevBtn">
-						<svg class="w-6 h-6 text-gray-700 group-hover:text-primary transition-colors" fill="none"
-							stroke="currentColor" viewBox="0 0 24 24">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
-							</path>
-						</svg>
-					</button>
-					<button
-						class="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group"
-						id="nextBtn">
-						<svg class="w-6 h-6 text-gray-700 group-hover:text-primary transition-colors" fill="none"
-							stroke="currentColor" viewBox="0 0 24 24">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
-							</path>
-						</svg>
-					</button>
 				</div>
 			</div>
+		</div>
+
+		<!-- Navigation Arrows -->
+		<button
+			class="absolute left-8 top-1/2 transform -translate-y-1/2 w-14 h-14 bg-white/20 backdrop-blur-sm rounded-full shadow-lg hover:bg-white/30 transition-all duration-300 flex items-center justify-center group"
+			id="prevBtn">
+			<svg class="w-7 h-7 text-white group-hover:text-orange-400 transition-colors" fill="none"
+				stroke="currentColor" viewBox="0 0 24 24">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+			</svg>
+		</button>
+		<button
+			class="absolute right-8 top-1/2 transform -translate-y-1/2 w-14 h-14 bg-white/20 backdrop-blur-sm rounded-full shadow-lg hover:bg-white/30 transition-all duration-300 flex items-center justify-center group"
+			id="nextBtn">
+			<svg class="w-7 h-7 text-white group-hover:text-orange-400 transition-colors" fill="none"
+				stroke="currentColor" viewBox="0 0 24 24">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+			</svg>
+		</button>
+		</div>
+
+		<!-- Progress Bar -->
+		<div class="w-full bg-gray-200 rounded-full h-1 mt-4">
+			<div class="progress-bar bg-primary h-1 rounded-full" style="width: 0%"></div>
+		</div>
+
+		<!-- Navigation Arrows -->
+		<button
+			class="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group"
+			id="prevBtn">
+			<svg class="w-6 h-6 text-gray-700 group-hover:text-primary transition-colors" fill="none"
+				stroke="currentColor" viewBox="0 0 24 24">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+			</svg>
+		</button>
+		<button
+			class="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group"
+			id="nextBtn">
+			<svg class="w-6 h-6 text-gray-700 group-hover:text-primary transition-colors" fill="none"
+				stroke="currentColor" viewBox="0 0 24 24">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+			</svg>
+		</button>
+		</div>
+		</div>
 		</div>
 	</section>
 
@@ -751,8 +677,6 @@
 		// Initialize
 		startAutoSlide();
 	</script>
-
-
 
 	<style>
 		.hide-scrollbar {
