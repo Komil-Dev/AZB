@@ -31,20 +31,15 @@ body {
 
 .neo-morphism {
   background: #fff;
-  box-shadow: 20px 20px 40px rgba(27, 94, 32, 0.1), -20px -20px 40px rgba(255, 255, 255, 0.8);
+
   border: 1px solid rgba(27, 94, 32, 0.1);
 }
 
 .neo-input {
   background: #fff;
-  box-shadow: inset 8px 8px 16px rgba(27, 94, 32, 0.05), inset -8px -8px 16px rgba(255, 255, 255, 0.7);
+
   border: none;
   transition: all 0.3s ease;
-}
-
-.neo-input:focus {
-  box-shadow: inset 12px 12px 20px rgba(27, 94, 32, 0.08), inset -12px -12px 20px rgba(255, 255, 255, 0.9),
-    0 0 0 3px rgba(27, 94, 32, 0.1);
 }
 
 .neo-button {
@@ -97,18 +92,6 @@ body {
   animation: pulseGlow 3s ease-in-out infinite;
 }
 
-@keyframes pulseGlow {
-  0%,
-  100% {
-    opacity: 0.6;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.8;
-    transform: scale(1.05);
-  }
-}
-
 .masonry-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -130,6 +113,7 @@ body {
   left: 16px;
   font-size: 16px;
   color: #666;
+  background-color: #fff;
   transition: all 0.3s ease;
   pointer-events: none;
 }
