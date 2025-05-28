@@ -44,17 +44,18 @@
 
 <body class="bg-white text-white touch-action: none; user-select:none">
 
-	<header
-		class="fixed top-0 left-0 w-full backdrop-blur-md shadow-sm z-40 h-[72px] transition-all duration-300 ease-in-out"
+	<header class="fixed top-0 left-0 w-full header-transparent transition-all duration-300 ease-in-out z-40 h-[72px]"
 		id="mainHeader">
 		<div class="container mx-auto px-6 py-4 flex items-center justify-between h-full max-w-7xl">
 			<!-- Logo -->
 			<a href="./index.html" class="flex items-center space-x-2">
-				<div class="w-8 h-8 bg-green-700 rounded-lg flex items-center justify-center ">
+				<div class="w-8 h-8 bg-green-700 rounded-lg flex items-center justify-center">
 					<span class="text-white font-bold text-sm">AZB</span>
 				</div>
 				<span class="font-bold text-xl text-gray-900">Abdushukur Zamin Baraka</span>
 			</a>
+
+			<!-- Desktop Navigation -->
 			<nav class="hidden lg:flex items-center bg-gray-50 rounded-full px-2 py-1">
 				<a href="./index.html"
 					class="flex items-center px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-white rounded-full transition-all duration-200">
@@ -73,7 +74,6 @@
 					</svg>
 					Products
 				</a>
-
 				<a href="./aboutus.html"
 					class="flex items-center px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-white rounded-full transition-all duration-200">
 					<svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -97,7 +97,7 @@
 			<div class="flex items-center space-x-4">
 				<a href="./contact.html">
 					<button
-						class="hidden lg:flex items-center px-6 py-2.5 bg-green-700 text-white rounded-full font-semibold text-sm transition-all duration-200 hover:bg-green-800 hover:shadow-lg transform hover:scale-105">
+						class="hidden lg:flex items-center px-6 py-2.5 bg-green-700 text-white rounded-full font-semibold text-sm transition-all duration-200 hover:bg-green-800">
 						<span>Order Now</span>
 						<svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -121,7 +121,7 @@
 			class="fixed inset-0 bg-white transform translate-x-full transition-transform duration-500 ease-in-out lg:hidden z-50">
 			<div class="flex flex-col h-full">
 				<!-- Header Section -->
-				<div class="flex items-center justify-between p-6 border-gray-100 bg-white">
+				<div class="flex items-center justify-between p-6 border-b border-gray-100 bg-white">
 					<div class="flex items-center space-x-3 animate-fade-in">
 						<span class="font-bold text-2xl text-gray-700 tracking-wide">Abdushukur Zamin Baraka</span>
 					</div>
@@ -138,7 +138,7 @@
 				<!-- Navigation Links -->
 				<nav class="flex-1 flex flex-col justify-center space-y-3 px-6 py-8">
 					<a href="./index.html"
-						class="group relative text-left py-5 px-6 text-lg font-medium text-gray-800 transition-all duration-300 rounded-xl transform border border-transparent flex items-center space-x-4 hover:bg-gradient-to-r hover:from-green-50 hover:to-emerald-50">
+						class="group relative text-left py-5 px-6 text-lg font-medium text-gray-800 transition-all duration-300 rounded-xl border border-transparent flex items-center space-x-4 hover:bg-gradient-to-r hover:from-green-50 hover:to-emerald-50">
 						<svg class="w-6 h-6 text-green-600 transition-colors" fill="none" stroke="currentColor"
 							viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -147,7 +147,7 @@
 						<span class="relative z-10">Home</span>
 					</a>
 					<a href="./products.html"
-						class="group relative text-left py-5 px-6 text-lg font-medium text-gray-800 transition-all duration-300 rounded-xl transform border border-transparent flex items-center space-x-4 hover:bg-gradient-to-r hover:from-green-50 hover:to-emerald-50">
+						class="group relative text-left py-5 px-6 text-lg font-medium text-gray-800 transition-all duration-300 rounded-xl border border-transparent flex items-center space-x-4 hover:bg-gradient-to-r hover:from-green-50 hover:to-emerald-50">
 						<svg class="w-6 h-6 text-green-600 transition-colors" fill="none" stroke="currentColor"
 							viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -156,7 +156,7 @@
 						<span class="relative z-10">Products</span>
 					</a>
 					<a href="./aboutus.html"
-						class="group relative text-left py-5 px-6 text-lg font-medium text-gray-800 transition-all duration-300 rounded-xl transform border border-transparent flex items-center space-x-4 hover:bg-gradient-to-r hover:from-green-50 hover:to-emerald-50">
+						class="group relative text-left py-5 px-6 text-lg font-medium text-gray-800 transition-all duration-300 rounded-xl border border-transparent flex items-center space-x-4 hover:bg-gradient-to-r hover:from-green-50 hover:to-emerald-50">
 						<svg class="w-6 h-6 text-green-600 transition-colors" fill="none" stroke="currentColor"
 							viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -165,7 +165,7 @@
 						<span class="relative z-10">About Us</span>
 					</a>
 					<a href="./contact.html"
-						class="group relative text-left py-5 px-6 text-lg font-medium text-gray-800 transition-all duration-300 rounded-xl transform border border-transparent flex items-center space-x-4 hover:bg-gradient-to-r hover:from-green-50 hover:to-emerald-50">
+						class="group relative text-left py-5 px-6 text-lg font-medium text-gray-800 transition-all duration-300 rounded-xl border border-transparent flex items-center space-x-4 hover:bg-gradient-to-r hover:from-green-50 hover:to-emerald-50">
 						<svg class="w-6 h-6 text-green-600 transition-colors" fill="none" stroke="currentColor"
 							viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -195,7 +195,7 @@
 							<svg class="w-5 h-5 text-green-600 group-hover:text-white transition-colors"
 								fill="currentColor" viewBox="0 0 32 32">
 								<path
-									d="M16.002 2.667c-7.334 0-13.333 6-13.333 13.333 0 2.354.616 4.666 1.786 6.713L2.667 29.333l6.794-1.758a13.22 13.22 0 006.54 1.76c7.333 0 13.333-6 13.333-13.333 0-7.333-6-13.335-13.332-13.335zm0 24a10.67 10.67 0 01-5.427-1.479l-.387-.229-4.013 1.038 1.067-3.9-.251-.403a10.663 10.663 0 01-1.656-5.693c0-5.896 4.771-10.667 10.667-10.667s10.667 4.771 10.667 10.667c0 5.896-4.771 10.666-10.667 10.666zM21.334 18.5c-.313-.156-1.854-.917-2.146-1.021-.292-.104-.5-.156-.708.156-.208.313-.812 1.021-.998 1.229-.187.208-.375.229-.688.073-.313-.156-1.313-.479-2.5-1.521-.917-.812-1.542-1.812-1.729-2.125-.187-.313-.021-.479.135-.635.146-.146.313-.375.469-.563.156-.187.208-.313.313-.521.104-.208.052-.396-.021-.552-.073-.156-.708-1.708-.975-2.333-.25-.604-.521-.521-.708-.531-.188-.01-.396-.01-.604-.01-.208 0-.542.073-.833.365-.292.292-1.104 1.083-1.104 2.646s1.125 3.063 1.281 3.271c.156.208 2.208 3.375 5.354 4.729.75.323 1.333.521 1.792.667.75.24 1.438.208 1.979.125.604-.094 1.854-.76 2.125-1.479.271-.719.271-1.333.188-1.458-.083-.125-.291-.208-.604-.365z" />
+									d="M16.002 2.667c-7.334 0-13.333 6-13.333 13.333 0 2.354.616 4.666 1.786 6.713L2.667 29.333l6.794-1.758a13.22 13.22 0 006.54 1.76c7.333 0 13.333-6 13.333-13.333 0-7.333-6-13.335-13.332-13.335zm0 24a10.67 10.67 0 01-5.427-1.427l-.386-.23-4.027 1.04 1.077-3.927-.254-.4A10.586 10.586 0 015.335 16c0-5.89 4.776-10.667 10.667-10.667S26.669 10.11 26.669 16s-4.777 10.667-10.667 10.667zm5.854-8.005c-.32-.16-1.894-.933-2.188-1.04-.293-.107-.506-.16-.72.16-.213.32-.827 1.04-1.013 1.253-.187.213-.374.24-.694.08-.32-.16-1.351-.498-2.574-1.587-.951-.848-1.594-1.894-1.781-2.214-.187-.32-.02-.493.14-.653.144-.144.32-.374.48-.56.16-.187.213-.32.32-.534.107-.213.053-.4-.027-.56-.08-.16-.72-1.734-.987-2.374-.267-.64-.533-.533-.72-.533-.187 0-.4-.027-.614-.027-.213 0-.56.08-.854.4-.293.32-1.12 1.093-1.12 2.667s1.147 3.093 1.307 3.307c.16.213 2.267 3.466 5.494 4.866.767.334 1.367.533 1.834.68.774.24 1.48.2 2.04.12.62-.093 1.894-.774 2.161-1.52.267-.747.267-1.387.187-1.52-.08-.133-.293-.213-.614-.373z" />
 							</svg>
 						</a>
 					</div>
@@ -204,84 +204,73 @@
 		</div>
 	</header>
 
-	<style>
-		/* Tailwind CSS CDN for styling */
-		@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
 
-		/* Custom animations */
-		@keyframes fade-in {
-			from {
-				opacity: 0;
-				transform: translateY(-10px);
-			}
-
-			to {
-				opacity: 1;
-				transform: translateY(0);
-			}
-		}
-
-		.animate-fade-in {
-			animation: fade-in 0.5s ease-out;
-		}
-
-		/* Custom backdrop blur for better browser support */
-		.backdrop-blur-md {
-			backdrop-filter: blur(12px);
-			-webkit-backdrop-filter: blur(12px);
-			background-color: rgba(255, 255, 255, 0.8);
-		}
-
-		/* Mobile menu animations */
-		#mobileMenu.show {
-			transform: translateX(0);
-		}
-
-		/* Smooth scrolling for anchor links */
-		html {
-			scroll-behavior: smooth;
-		}
-
-		/* Header scroll effect */
-		.header-scrolled {
-			background-color: rgba(255, 255, 255, 0.95);
-			box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-		}
-	</style>
 
 	<script>
+		// Header scroll effect and mobile menu functionality
 		document.addEventListener('DOMContentLoaded', function () {
-			// Mobile menu elements
+			const header = document.getElementById('mainHeader');
 			const menuButton = document.getElementById('menuButton');
-			const closeButton = document.getElementById('closeButton');
 			const mobileMenu = document.getElementById('mobileMenu');
-			const mainHeader = document.getElementById('mainHeader');
+			const closeButton = document.getElementById('closeButton');
+			let lastScrollY = window.scrollY;
+			let ticking = false;
 
-			// Mobile menu toggle functionality
+			// Function to update header background based on scroll
+			function updateHeader() {
+				const currentScrollY = window.scrollY;
+
+				// Only apply scroll effects on mobile (below lg breakpoint)
+				if (window.innerWidth < 1024) {
+					if (currentScrollY > 50) {
+						header.classList.remove('header-transparent');
+						header.classList.add('header-scrolled');
+					} else {
+						header.classList.remove('header-scrolled');
+						header.classList.add('header-transparent');
+					}
+				} else {
+					// On desktop, always keep the backdrop blur
+					header.classList.remove('header-transparent');
+					header.classList.remove('header-scrolled');
+					header.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
+					header.style.backdropFilter = 'blur(10px)';
+				}
+
+				lastScrollY = currentScrollY;
+				ticking = false;
+			}
+
+			// Optimized scroll handler using requestAnimationFrame
+			function onScroll() {
+				if (!ticking) {
+					requestAnimationFrame(updateHeader);
+					ticking = true;
+				}
+			}
+
+			// Mobile menu handlers
 			function openMobileMenu() {
 				mobileMenu.classList.remove('translate-x-full');
 				mobileMenu.classList.add('translate-x-0');
-				document.body.style.overflow = 'hidden'; // Prevent background scrolling
+				document.body.style.overflow = 'hidden';
 			}
 
 			function closeMobileMenu() {
 				mobileMenu.classList.remove('translate-x-0');
 				mobileMenu.classList.add('translate-x-full');
-				document.body.style.overflow = ''; // Restore scrolling
+				document.body.style.overflow = 'auto';
 			}
 
-			// Event listeners for mobile menu
-			if (menuButton) {
-				menuButton.addEventListener('click', openMobileMenu);
-			}
+			// Event listeners
+			window.addEventListener('scroll', onScroll, { passive: true });
+			window.addEventListener('resize', updateHeader);
+			menuButton.addEventListener('click', openMobileMenu);
+			closeButton.addEventListener('click', closeMobileMenu);
 
-			if (closeButton) {
-				closeButton.addEventListener('click', closeMobileMenu);
-			}
-
-			// Close mobile menu when clicking on navigation links
-			const mobileNavLinks = mobileMenu.querySelectorAll('nav a');
-			mobileNavLinks.forEach(link => {
+			// Close mobile menu when clicking on menu links
+			const mobileMenuLinks = mobileMenu.querySelectorAll('a[href]');
+			mobileMenuLinks.forEach(link => {
 				link.addEventListener('click', closeMobileMenu);
 			});
 
@@ -292,150 +281,27 @@
 				}
 			});
 
-			// Header scroll effect
-			let lastScrollY = window.scrollY;
-
-			function updateHeaderOnScroll() {
-				const currentScrollY = window.scrollY;
-
-				if (currentScrollY > 50) {
-					mainHeader.classList.add('header-scrolled');
-				} else {
-					mainHeader.classList.remove('header-scrolled');
-				}
-
-				// Hide/show header on scroll
-				if (currentScrollY > lastScrollY && currentScrollY > 100) {
-					// Scrolling down
-					mainHeader.style.transform = 'translateY(-100%)';
-				} else {
-					// Scrolling up
-					mainHeader.style.transform = 'translateY(0)';
-				}
-
-				lastScrollY = currentScrollY;
-			}
-
-			// Throttled scroll event listener
-			let ticking = false;
-			function onScroll() {
-				if (!ticking) {
-					requestAnimationFrame(updateHeaderOnScroll);
-					ticking = true;
-					setTimeout(() => { ticking = false; }, 100);
-				}
-			}
-
-			window.addEventListener('scroll', onScroll, { passive: true });
-
-			// Active page highlighting
-			function highlightActivePage() {
-				const currentPath = window.location.pathname;
-				const navLinks = document.querySelectorAll('nav a');
-
-				navLinks.forEach(link => {
-					const linkPath = new URL(link.href).pathname;
-					if (linkPath === currentPath ||
-						(currentPath.includes(linkPath.replace('./', '')) && linkPath !== './index.html')) {
-						link.classList.add('bg-white', 'text-gray-900');
-						link.classList.remove('text-gray-600');
-					}
-				});
-			}
-
-			highlightActivePage();
-
-			// Smooth scroll for anchor links
-			document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-				anchor.addEventListener('click', function (e) {
-					e.preventDefault();
-					const target = document.querySelector(this.getAttribute('href'));
-					if (target) {
-						const headerHeight = mainHeader.offsetHeight;
-						const targetPosition = target.offsetTop - headerHeight - 20;
-
-						window.scrollTo({
-							top: targetPosition,
-							behavior: 'smooth'
-						});
-					}
-				});
-			});
-
-			// Handle resize events
-			function handleResize() {
-				if (window.innerWidth >= 1024) { // lg breakpoint
-					closeMobileMenu();
-				}
-			}
-
-			window.addEventListener('resize', handleResize);
-
-			// Keyboard navigation support
+			// Handle escape key
 			document.addEventListener('keydown', function (e) {
-				if (e.key === 'Escape') {
+				if (e.key === 'Escape' && !mobileMenu.classList.contains('translate-x-full')) {
 					closeMobileMenu();
 				}
 			});
 
-			// Touch events for mobile menu
-			let touchStartX = 0;
-			let touchEndX = 0;
-
-			mobileMenu.addEventListener('touchstart', function (e) {
-				touchStartX = e.changedTouches[0].screenX;
-			}, { passive: true });
-
-			mobileMenu.addEventListener('touchend', function (e) {
-				touchEndX = e.changedTouches[0].screenX;
-				if (touchStartX - touchEndX > 100) { // Swipe left to close
-					closeMobileMenu();
-				}
-			}, { passive: true });
-
-			// Preload hover states for better performance
-			const hoverElements = document.querySelectorAll('[class*="hover:"]');
-			hoverElements.forEach(el => {
-				el.addEventListener('mouseenter', function () {
-					// Trigger hardware acceleration
-					this.style.transform = 'translateZ(0)';
-				}, { once: true });
-			});
-
-			// Add loading animation
-			function addLoadingAnimation() {
-				const logo = document.querySelector('.w-8.h-8.bg-green-700');
-				if (logo) {
-					logo.style.animation = 'pulse 2s ease-in-out infinite';
-				}
-			}
-
-			// Initialize loading animation
-			addLoadingAnimation();
-
-			console.log('AZB Header initialized successfully');
+			// Initial header state
+			updateHeader();
 		});
 
-		// Performance optimization: Intersection Observer for animations
-		if ('IntersectionObserver' in window) {
-			const observerOptions = {
-				threshold: 0.1,
-				rootMargin: '0px 0px -50px 0px'
-			};
+		// Handle window resize for responsive behavior
+		window.addEventListener('resize', function () {
+			const mobileMenu = document.getElementById('mobileMenu');
 
-			const observer = new IntersectionObserver((entries) => {
-				entries.forEach(entry => {
-					if (entry.isIntersecting) {
-						entry.target.classList.add('animate-fade-in');
-					}
-				});
-			}, observerOptions);
-
-			// Observe elements that should animate on scroll
-			document.querySelectorAll('.group').forEach(el => {
-				observer.observe(el);
-			});
-		}
+			// Close mobile menu if window is resized to desktop
+			if (window.innerWidth >= 1024) {
+				mobileMenu.classList.add('translate-x-full');
+				document.body.style.overflow = 'auto';
+			}
+		});
 	</script>
 
 
