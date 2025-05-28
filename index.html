@@ -653,10 +653,12 @@
 					<h3 class="font-bold text-base sm:text-lg mb-2 text-gray-800">Kungaboqar urug'i</h3>
 					<p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-3">Tabiiy kungaboqar urug'lari. E
 						vitamini va foydali yog'larga boy </p>
-					<button
-						class="w-full bg-emerald-700 hover:bg-emerald-800 active:bg-emerald-900 order-btn text-white rounded-lg font-medium text-sm py-3 transition-all">
-						Make Order
-					</button>
+					<a href="./contact.html">
+						<button
+							class="w-full bg-emerald-700 hover:bg-emerald-800 active:bg-emerald-900 order-btn text-white rounded-lg font-medium text-sm py-3 transition-all">
+							Make Order
+						</button>
+					</a>
 				</div>
 			</div>
 			<div
@@ -792,36 +794,8 @@
 
 	<script>
 		// Add click event to order buttons with enhanced mobile feedback
-		document.querySelectorAll('.order-btn').forEach(button => {
-			button.addEventListener('click', function (e) {
-				e.preventDefault();
 
-				// Add visual feedback
-				this.style.transform = 'scale(0.95)';
-				setTimeout(() => {
-					this.style.transform = '';
-				}, 150);
 
-				const card = this.closest('.product-card');
-				const productName = card.querySelector('h3').textContent;
-
-				// Mobile-friendly alert
-				if (window.confirm(`"${productName}" uchun buyurtma berasizmi?\n\nHa - Buyurtma berish\nYo'q - Bekor qilish`)) {
-					// Show success message
-					const originalText = this.textContent;
-					this.textContent = '✓ Qabul qilindi';
-					this.style.backgroundColor = '#16a34a';
-
-					setTimeout(() => {
-						this.textContent = originalText;
-						this.style.backgroundColor = '';
-					}, 2000);
-
-					// Optional: Add to cart or send to server
-					console.log(`Order placed for: ${productName}`);
-				}
-			});
-		});
 
 		// Add scroll snap behavior for better mobile experience
 		const productGrid = document.querySelector('.product-grid');
