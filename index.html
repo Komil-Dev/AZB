@@ -44,7 +44,9 @@
 
 <body class="bg-white text-white touch-action: none; user-select:none">
 
-	<header class="fixed top-0 left-0 w-full bg-white  shadow-sm z-40 h-[72px]" id="mainHeader">
+	<header
+		class="fixed top-0 left-0 w-full backdrop-blur-md shadow-sm z-40 h-[72px] transition-all duration-300 ease-in-out"
+		id="mainHeader">
 		<div class="container mx-auto px-6 py-4 flex items-center justify-between h-full max-w-7xl">
 			<!-- Logo -->
 			<a href="./index.html" class="flex items-center space-x-2">
@@ -95,7 +97,7 @@
 			<div class="flex items-center space-x-4">
 				<a href="./contact.html">
 					<button
-						class="hidden lg:flex items-center px-6 py-2.5 bg-green-700 text-white rounded-full font-semibold text-sm transition-all duration-200">
+						class="hidden lg:flex items-center px-6 py-2.5 bg-green-700 text-white rounded-full font-semibold text-sm transition-all duration-200 hover:bg-green-800 hover:shadow-lg transform hover:scale-105">
 						<span>Order Now</span>
 						<svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -136,54 +138,40 @@
 				<!-- Navigation Links -->
 				<nav class="flex-1 flex flex-col justify-center space-y-3 px-6 py-8">
 					<a href="./index.html"
-						class="group relative text-left py-5 px-6 text-lg font-medium text-gray-800 transition-all duration-300 rounded-xl  transform  border border-transparet flex items-center space-x-4">
-						<svg class="w-6 h-6 text-green-600  transition-colors" fill="none" stroke="currentColor"
+						class="group relative text-left py-5 px-6 text-lg font-medium text-gray-800 transition-all duration-300 rounded-xl transform border border-transparent flex items-center space-x-4 hover:bg-gradient-to-r hover:from-green-50 hover:to-emerald-50">
+						<svg class="w-6 h-6 text-green-600 transition-colors" fill="none" stroke="currentColor"
 							viewBox="0 0 24 24">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-								d="M3 12h18m-9 4.5V19.5m0-15v3m0 12V15m-4.5-3H21m-18 0h3.75" />
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
 								d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
 						</svg>
 						<span class="relative z-10">Home</span>
-						<div
-							class="absolute inset-0 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl opacity-0  transition-opacity duration-300">
-						</div>
 					</a>
 					<a href="./products.html"
-						class="group relative text-left py-5 px-6 text-lg font-medium text-gray-800 transition-all duration-300 rounded-xl  transform  border border-transparet  flex items-center space-x-4">
-						<svg class="w-6 h-6 text-green-600  transition-colors" fill="none" stroke="currentColor"
+						class="group relative text-left py-5 px-6 text-lg font-medium text-gray-800 transition-all duration-300 rounded-xl transform border border-transparent flex items-center space-x-4 hover:bg-gradient-to-r hover:from-green-50 hover:to-emerald-50">
+						<svg class="w-6 h-6 text-green-600 transition-colors" fill="none" stroke="currentColor"
 							viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-								d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M9 21V9a2 2 0 012-2h2a2 2 0 012 2v12" />
+								d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M9 21V9a2 2 0 212-2h2a2 2 0 212 2v12" />
 						</svg>
 						<span class="relative z-10">Products</span>
-						<div
-							class="absolute inset-0 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl opacity-0 transition-opacity duration-300">
-						</div>
 					</a>
 					<a href="./aboutus.html"
-						class="group relative text-left py-5 px-6 text-lg font-medium text-gray-800 transition-all duration-300 rounded-xl  transform  border border-transparet  flex items-center space-x-4">
-						<svg class="w-6 h-6 text-green-600  transition-colors" fill="none" stroke="currentColor"
+						class="group relative text-left py-5 px-6 text-lg font-medium text-gray-800 transition-all duration-300 rounded-xl transform border border-transparent flex items-center space-x-4 hover:bg-gradient-to-r hover:from-green-50 hover:to-emerald-50">
+						<svg class="w-6 h-6 text-green-600 transition-colors" fill="none" stroke="currentColor"
 							viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
 								d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
 						</svg>
 						<span class="relative z-10">About Us</span>
-						<div
-							class="absolute inset-0 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl opacity-0  transition-opacity duration-300">
-						</div>
 					</a>
 					<a href="./contact.html"
-						class="group relative text-left py-5 px-6 text-lg font-medium text-gray-800 transition-all duration-300 rounded-xl transform  border border-transparet flex items-center space-x-4">
+						class="group relative text-left py-5 px-6 text-lg font-medium text-gray-800 transition-all duration-300 rounded-xl transform border border-transparent flex items-center space-x-4 hover:bg-gradient-to-r hover:from-green-50 hover:to-emerald-50">
 						<svg class="w-6 h-6 text-green-600 transition-colors" fill="none" stroke="currentColor"
 							viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
 								d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
 						</svg>
 						<span class="relative z-10">Contact</span>
-						<div
-							class="absolute inset-0 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl opacity-0  transition-opacity duration-300">
-						</div>
 					</a>
 				</nav>
 
@@ -207,88 +195,247 @@
 							<svg class="w-5 h-5 text-green-600 group-hover:text-white transition-colors"
 								fill="currentColor" viewBox="0 0 32 32">
 								<path
-									d="M16.002 2.667c-7.334 0-13.333 6-13.333 13.333 0 2.354.616 4.666 1.786 6.713L2.667 29.333l6.794-1.758a13.22 13.22 0 006.54 1.76c7.333 0 13.333-6 13.333-13.333 0-7.333-6-13.335-13.332-13.335zm0 24a10.67 10.67 0 01-5.438-1.487l-.392-.232-4.03 1.04 1.078-3.92-.256-.402A10.627 10.627 0 015.333 16c0-5.887 4.781-10.667 10.668-10.667s10.667 4.78 10.667 10.667c0 5.886-4.78 10.667-10.666 10.667zm5.75-7.813c-.314-.157-1.86-.915-2.148-1.02-.288-.106-.498-.157-.707.156s-.81 1.02-.993 1.228c-.182.208-.364.236-.678.079-.314-.158-1.326-.488-2.526-1.556-.933-.832-1.56-1.856-1.744-2.17-.182-.313-.02-.482.137-.638.142-.142.313-.367.47-.55.156-.183.208-.314.314-.523.106-.208.053-.393-.026-.55-.078-.157-.707-1.707-.97-2.34-.255-.61-.515-.528-.707-.537l-.601-.01a1.167 1.167 0 00-.849.396c-.288.314-1.1 1.073-1.1 2.615 0 1.541 1.126 3.033 1.282 3.241.157.209 2.221 3.393 5.383 4.757.752.325 1.339.519 1.796.664.754.24 1.44.206 1.982.125.605-.09 1.86-.76 2.123-1.493.262-.732.262-1.36.183-1.493-.079-.132-.288-.209-.602-.366z" />
-							</svg>
-						</a>
-						<a href="https://wechat.com/Abdushukur_278" target="_blank" rel="noopener noreferrer"
-							aria-label="WeChat"
-							class="group w-12 h-12 bg-white hover:bg-green-500 rounded-full flex items-center justify-center transition-all duration-300 shadow-md hover:shadow-xl transform hover:scale-110 hover:-translate-y-1 border border-gray-200">
-							<svg class="w-6 h-6 text-green-500 group-hover:text-white transition-colors"
-								fill="currentColor" viewBox="0 0 24 24">
-								<path
-									d="M8.5 6c-2.8 0-5 1.9-5 4.2 0 1.4.8 2.7 2 3.4l-.5 1.5 1.7-.9c.6.1 1.2.2 1.8.2.2 0 .4 0 .6-.1-.1-.4-.2-.8-.2-1.3 0-2.4 2.2-4.3 5-4.3.3 0 .6 0 .9.1C13.4 7.2 11.2 6 8.5 6zm-2.3 2.5c.4 0 .7.3.7.7s-.3.7-.7.7-.7-.3-.7-.7.3-.7.7-.7zm4.6 0c.4 0 .7.3.7.7s-.3.7-.7.7-.7-.3-.7-.7.3-.7.7-.7z" />
-								<path
-									d="M15.5 11c-2.5 0-4.5 1.6-4.5 3.5s2 3.5 4.5 3.5c.5 0 1-.1 1.4-.2l1.4.8-.4-1.2c1-.6 1.6-1.6 1.6-2.9 0-1.9-2-3.5-4.5-3.5zm-1.8 2.2c.3 0 .5.2.5.5s-.2.5-.5.5-.5-.2-.5-.5.2-.5.5-.5zm3.6 0c.3 0 .5.2.5.5s-.2.5-.5.5-.5-.2-.5-.5.2-.5.5-.5z" />
+									d="M16.002 2.667c-7.334 0-13.333 6-13.333 13.333 0 2.354.616 4.666 1.786 6.713L2.667 29.333l6.794-1.758a13.22 13.22 0 006.54 1.76c7.333 0 13.333-6 13.333-13.333 0-7.333-6-13.335-13.332-13.335zm0 24a10.67 10.67 0 01-5.427-1.479l-.387-.229-4.013 1.038 1.067-3.9-.251-.403a10.663 10.663 0 01-1.656-5.693c0-5.896 4.771-10.667 10.667-10.667s10.667 4.771 10.667 10.667c0 5.896-4.771 10.666-10.667 10.666zM21.334 18.5c-.313-.156-1.854-.917-2.146-1.021-.292-.104-.5-.156-.708.156-.208.313-.812 1.021-.998 1.229-.187.208-.375.229-.688.073-.313-.156-1.313-.479-2.5-1.521-.917-.812-1.542-1.812-1.729-2.125-.187-.313-.021-.479.135-.635.146-.146.313-.375.469-.563.156-.187.208-.313.313-.521.104-.208.052-.396-.021-.552-.073-.156-.708-1.708-.975-2.333-.25-.604-.521-.521-.708-.531-.188-.01-.396-.01-.604-.01-.208 0-.542.073-.833.365-.292.292-1.104 1.083-1.104 2.646s1.125 3.063 1.281 3.271c.156.208 2.208 3.375 5.354 4.729.75.323 1.333.521 1.792.667.75.24 1.438.208 1.979.125.604-.094 1.854-.76 2.125-1.479.271-.719.271-1.333.188-1.458-.083-.125-.291-.208-.604-.365z" />
 							</svg>
 						</a>
 					</div>
 				</div>
 			</div>
 		</div>
-
-		<style>
-			@keyframes fade-in {
-				from {
-					opacity: 0;
-					transform: translateY(-20px);
-				}
-
-				to {
-					opacity: 1;
-					transform: translateY(0);
-				}
-			}
-
-			.animate-fade-in {
-				animation: fade-in 0.6s ease-out;
-			}
-		</style>
-		</div>
 	</header>
 
-	<!-- Hero Section -->
+	<style>
+		/* Tailwind CSS CDN for styling */
+		@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+
+		/* Custom animations */
+		@keyframes fade-in {
+			from {
+				opacity: 0;
+				transform: translateY(-10px);
+			}
+
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		.animate-fade-in {
+			animation: fade-in 0.5s ease-out;
+		}
+
+		/* Custom backdrop blur for better browser support */
+		.backdrop-blur-md {
+			backdrop-filter: blur(12px);
+			-webkit-backdrop-filter: blur(12px);
+			background-color: rgba(255, 255, 255, 0.8);
+		}
+
+		/* Mobile menu animations */
+		#mobileMenu.show {
+			transform: translateX(0);
+		}
+
+		/* Smooth scrolling for anchor links */
+		html {
+			scroll-behavior: smooth;
+		}
+
+		/* Header scroll effect */
+		.header-scrolled {
+			background-color: rgba(255, 255, 255, 0.95);
+			box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+		}
+	</style>
 
 	<script>
-		// Header scroll effect
-		const header = document.getElementById('mainHeader');
-		const menuButton = document.getElementById('menuButton');
-		const mobileMenu = document.getElementById('mobileMenu');
-		const closeButton = document.getElementById('closeButton');
+		document.addEventListener('DOMContentLoaded', function () {
+			// Mobile menu elements
+			const menuButton = document.getElementById('menuButton');
+			const closeButton = document.getElementById('closeButton');
+			const mobileMenu = document.getElementById('mobileMenu');
+			const mainHeader = document.getElementById('mainHeader');
 
-		// Mobile menu toggle
-		menuButton.addEventListener('click', () => {
-			mobileMenu.classList.remove('translate-x-full');
-			document.body.style.overflow = 'hidden';
-		});
-
-		closeButton.addEventListener('click', () => {
-			mobileMenu.classList.add('translate-x-full');
-			document.body.style.overflow = 'auto';
-		});
-
-		// Close menu when clicking outside
-		document.addEventListener('click', (e) => {
-			if (!mobileMenu.classList.contains('translate-x-full') &&
-				!mobileMenu.contains(e.target) &&
-				!menuButton.contains(e.target)) {
-				mobileMenu.classList.add('translate-x-full');
-				document.body.style.overflow = 'auto';
+			// Mobile menu toggle functionality
+			function openMobileMenu() {
+				mobileMenu.classList.remove('translate-x-full');
+				mobileMenu.classList.add('translate-x-0');
+				document.body.style.overflow = 'hidden'; // Prevent background scrolling
 			}
-		});
 
-		// Smooth scroll for anchor links
-		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-			anchor.addEventListener('click', function (e) {
-				e.preventDefault();
-				const target = document.querySelector(this.getAttribute('href'));
-				if (target) {
-					target.scrollIntoView({
-						behavior: 'smooth',
-						block: 'start'
-					});
+			function closeMobileMenu() {
+				mobileMenu.classList.remove('translate-x-0');
+				mobileMenu.classList.add('translate-x-full');
+				document.body.style.overflow = ''; // Restore scrolling
+			}
+
+			// Event listeners for mobile menu
+			if (menuButton) {
+				menuButton.addEventListener('click', openMobileMenu);
+			}
+
+			if (closeButton) {
+				closeButton.addEventListener('click', closeMobileMenu);
+			}
+
+			// Close mobile menu when clicking on navigation links
+			const mobileNavLinks = mobileMenu.querySelectorAll('nav a');
+			mobileNavLinks.forEach(link => {
+				link.addEventListener('click', closeMobileMenu);
+			});
+
+			// Close mobile menu when clicking outside
+			mobileMenu.addEventListener('click', function (e) {
+				if (e.target === mobileMenu) {
+					closeMobileMenu();
 				}
 			});
+
+			// Header scroll effect
+			let lastScrollY = window.scrollY;
+
+			function updateHeaderOnScroll() {
+				const currentScrollY = window.scrollY;
+
+				if (currentScrollY > 50) {
+					mainHeader.classList.add('header-scrolled');
+				} else {
+					mainHeader.classList.remove('header-scrolled');
+				}
+
+				// Hide/show header on scroll
+				if (currentScrollY > lastScrollY && currentScrollY > 100) {
+					// Scrolling down
+					mainHeader.style.transform = 'translateY(-100%)';
+				} else {
+					// Scrolling up
+					mainHeader.style.transform = 'translateY(0)';
+				}
+
+				lastScrollY = currentScrollY;
+			}
+
+			// Throttled scroll event listener
+			let ticking = false;
+			function onScroll() {
+				if (!ticking) {
+					requestAnimationFrame(updateHeaderOnScroll);
+					ticking = true;
+					setTimeout(() => { ticking = false; }, 100);
+				}
+			}
+
+			window.addEventListener('scroll', onScroll, { passive: true });
+
+			// Active page highlighting
+			function highlightActivePage() {
+				const currentPath = window.location.pathname;
+				const navLinks = document.querySelectorAll('nav a');
+
+				navLinks.forEach(link => {
+					const linkPath = new URL(link.href).pathname;
+					if (linkPath === currentPath ||
+						(currentPath.includes(linkPath.replace('./', '')) && linkPath !== './index.html')) {
+						link.classList.add('bg-white', 'text-gray-900');
+						link.classList.remove('text-gray-600');
+					}
+				});
+			}
+
+			highlightActivePage();
+
+			// Smooth scroll for anchor links
+			document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+				anchor.addEventListener('click', function (e) {
+					e.preventDefault();
+					const target = document.querySelector(this.getAttribute('href'));
+					if (target) {
+						const headerHeight = mainHeader.offsetHeight;
+						const targetPosition = target.offsetTop - headerHeight - 20;
+
+						window.scrollTo({
+							top: targetPosition,
+							behavior: 'smooth'
+						});
+					}
+				});
+			});
+
+			// Handle resize events
+			function handleResize() {
+				if (window.innerWidth >= 1024) { // lg breakpoint
+					closeMobileMenu();
+				}
+			}
+
+			window.addEventListener('resize', handleResize);
+
+			// Keyboard navigation support
+			document.addEventListener('keydown', function (e) {
+				if (e.key === 'Escape') {
+					closeMobileMenu();
+				}
+			});
+
+			// Touch events for mobile menu
+			let touchStartX = 0;
+			let touchEndX = 0;
+
+			mobileMenu.addEventListener('touchstart', function (e) {
+				touchStartX = e.changedTouches[0].screenX;
+			}, { passive: true });
+
+			mobileMenu.addEventListener('touchend', function (e) {
+				touchEndX = e.changedTouches[0].screenX;
+				if (touchStartX - touchEndX > 100) { // Swipe left to close
+					closeMobileMenu();
+				}
+			}, { passive: true });
+
+			// Preload hover states for better performance
+			const hoverElements = document.querySelectorAll('[class*="hover:"]');
+			hoverElements.forEach(el => {
+				el.addEventListener('mouseenter', function () {
+					// Trigger hardware acceleration
+					this.style.transform = 'translateZ(0)';
+				}, { once: true });
+			});
+
+			// Add loading animation
+			function addLoadingAnimation() {
+				const logo = document.querySelector('.w-8.h-8.bg-green-700');
+				if (logo) {
+					logo.style.animation = 'pulse 2s ease-in-out infinite';
+				}
+			}
+
+			// Initialize loading animation
+			addLoadingAnimation();
+
+			console.log('AZB Header initialized successfully');
 		});
+
+		// Performance optimization: Intersection Observer for animations
+		if ('IntersectionObserver' in window) {
+			const observerOptions = {
+				threshold: 0.1,
+				rootMargin: '0px 0px -50px 0px'
+			};
+
+			const observer = new IntersectionObserver((entries) => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add('animate-fade-in');
+					}
+				});
+			}, observerOptions);
+
+			// Observe elements that should animate on scroll
+			document.querySelectorAll('.group').forEach(el => {
+				observer.observe(el);
+			});
+		}
 	</script>
 
 
