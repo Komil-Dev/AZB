@@ -43,7 +43,9 @@
 
 
 <body class="bg-white text-white touch-action: none; user-select:none">
-	<header class="fixed top-0 left-0 w-full bg-transparent backdrop-blur-md shadow-sm z-40 h-[72px]" id="mainHeader">
+	<header
+		class="fixed top-0 left-0 w-full bg-transparent backdrop-blur-sm shadow-[10px] z-40 h-[72px] md:bg-white md:backdrop-blur-0"
+		id="mainHeader">
 
 		<div class="container mx-auto px-6 py-4 flex items-center justify-between h-full max-w-7xl">
 			<!-- Logo -->
@@ -51,7 +53,7 @@
 				<div class="w-8 h-8 bg-green-700 rounded-lg flex items-center justify-center ">
 					<span class="text-white font-bold text-sm">AZB</span>
 				</div>
-				<span class="font-bold text-xl text-gray-900">Abdushukur Zamin Baraka</span>
+				<span class="font-bold text-xl text-gray-900 md:text-gray-900">Abdushukur Zamin Baraka</span>
 			</a>
 
 			<!-- Center Navigation -->
@@ -106,8 +108,8 @@
 				</a>
 
 				<!-- Mobile Menu Button -->
-				<button id="menuButton" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors">
-					<svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+				<button id="menuButton" class="lg:hidden p-2 rounded-lg text-white transition-colors">
+					<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
 							d="M4 6h16M4 12h16M4 18h16"></path>
 					</svg>
